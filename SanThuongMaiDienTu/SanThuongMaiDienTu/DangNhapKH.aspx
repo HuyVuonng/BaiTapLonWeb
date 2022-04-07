@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DangKyKH.aspx.cs" Inherits="SanThuongMaiDienTu.DangKyKH" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DangNhapKH.aspx.cs" Inherits="SanThuongMaiDienTu.DangNhapKH" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký</title>
+    <title>Đăng Nhập</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/main.css">
@@ -79,7 +79,7 @@
                                 class="header_napa-icon far fa-question-circle"></i>Trợ giúp</a>
                     </li>
                     <!-- <li class="header__navbar-item header__navbar-user">
-                        <img src="./assets/img/148819050_978251009372346_2252646809833946081_n.jpg" alt="" class="header__navbar-user-img">
+                        <img src="img/148819050_978251009372346_2252646809833946081_n.jpg" alt="" class="header__navbar-user-img">
                         <span class="header__navbar-user-name">Huy Vương</span>
 
                         <ul class="header__navbar-user-menu">
@@ -113,7 +113,6 @@
                         <input type="text" class="header_search-input" id="search"
                             placeholder="Nhập để tìm kiêm sản phẩm">
                     </div>
-                   
 
                     <button class="header_search-btn">
                         <i class="header_search-btn-icon fas fa-search"></i>
@@ -124,9 +123,10 @@
                     <div class="header_cart-wrap">
                         <a href=""><i class="header_cart-icon fas fa-shopping-cart"></i>
 
+
                             <!-- no-cart:  header_cart-list--no-cart -->
                             <!-- <div class="header_cart-list">
-                            <img src="./assets/img/no-cart.png" alt="" class="header_cart-no-cart-img">
+                            <img src="img/no-cart.png" alt="" class="header_cart-no-cart-img">
                             <span class="header_cart-list--no-cart-msg">Chưa có sản phẩm</span>
 
 
@@ -263,6 +263,7 @@
         </div>
     </header>
 
+
     <header class="header-mobile">
         <div class="grid wide">
             <div class="header-mobi-nav">
@@ -291,68 +292,39 @@
     <!-- modal-header-->
     <div class="modal" id="modal">
         <div class="moda_body">
-            <!-- register-form -->
-            <div class="auth-form" id="auth-form-register">
-                <div class="auth-form_container" id="auth-form_container-register">
+            login-form
+            <div class="auth-form" id="auth-form-login">
+                <div class="auth-form_container" id="auth-form_container-login">
                     <div class="auth-form_header">
-                        <h3 class="auth-form_heading">Đăng ký</h3>
-                        <span class="auth-form_swith-btn" id="auth-form_swith-btn-login"><a
-                                class="auth-form_swith-btn-a" href="DangNhapKH.aspx">Đăng nhập</a></span>
+                        <h3 class="auth-form_heading">Đăng Nhập</h3>
+                        <span class="auth-form_swith-btn" id="auth-form_swith-btn-register"><a
+                                class="auth-form_swith-btn-a" href="DangKyKH.aspx">Đăng ký</a></span>
                     </div>
 
                     <div class="auth-form_form">
                         <div class="auth-form_group">
-                            <asp:TextBox ID="txtHoTen" runat="server" CssClass="auth-form_input" placeholder="Nhập họ tên của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtHoTen" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
-                        
-                        <div class="auth-form_group">
-                            <asp:TextBox ID="txtSDT" runat="server" CssClass="auth-form_input" placeholder="Nhập số điện thoại của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtSDT" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Số điện thoại phải là kiểu số" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtSDT" ValidationExpression="(\d)*"  ForeColor="Red"></asp:RegularExpressionValidator>
-                        </div>
-
-                        
-                        <div class="auth-form_group">
-                            <asp:TextBox ID="txtDiaChi" runat="server" CssClass="auth-form_input" placeholder="Nhập địa chỉ của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtDiaChi" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
-
-
-                        <div class="auth-form_group">
                             <asp:TextBox ID="txtEmail" runat="server" CssClass="auth-form_input" placeholder="Nhập email của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtEmail" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Email sai định dạng" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"  ForeColor="Red"></asp:RegularExpressionValidator>
                         </div>
-
-
                         <div class="auth-form_group">
-                            <asp:TextBox ID="txtMK" runat="server" CssClass="auth-form_input" placeholder="Nhập mật khẩu của bạn" TextMode="Password"></asp:TextBox>   
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtMK" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="txtMk" runat="server" CssClass="auth-form_input" placeholder="Nhập mật khẩu của bạn" TextMode="Password"></asp:TextBox>
                         </div>
+                        
+                         <asp:Label ID="lbThongBao" runat="server" Text=""></asp:Label>
 
-                        <div class="auth-form_group">
-                            <asp:TextBox ID="txtNhapLaiMK" runat="server" CssClass="auth-form_input" placeholder="Nhập lại mật khẩu của bạn" TextMode="Password"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtNhapLaiMK" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
-                        <asp:Label ID="lbThongBao" runat="server" Text=""></asp:Label>
 
                     </div>
 
                     <div class="auth-form_aside">
-                        <p class="auth-form_policy-text">
-                            Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-                            <a href="" class="auth-form_text-link">Điều khoản dịch vụ</a> &
-                            <a href="" class="auth-form_text-link">Chính sách bảo mật</a>
-                        </p>
+                        <div class="auth-form_help">
+                            <a href="" class="auth-form_help-link auth-form_help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form_help-sparate"></span>
+                            <a href="" class="auth-form_help-link">Cần trợ giúp?</a>
+                        </div>
                     </div>
 
                     <div class="auth-form_control">
                         <button class="btn btn-normal auth-form_control-back">TRỞ LẠI</button>
-                        <asp:Button ID="lbtDangKy" runat="server" CssClass="btn btn-primary" Text="ĐĂNG KÝ" OnClick="lbtDangKy_Click"/>
+                        <asp:LinkButton ID="lbtnDangNhap" runat="server"  CssClass="btn btn-primary" OnClick="lbtnDangNhap_Click">Đăng nhập</asp:LinkButton>
 
                     </div>
                 </div>
@@ -368,13 +340,9 @@
                     </a>
                 </div>
             </div>
-
-
-
-
-
-           
         </div>
+    </div>
+
     </form>
 </body>
 </html>

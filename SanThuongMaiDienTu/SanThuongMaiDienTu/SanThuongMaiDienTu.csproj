@@ -117,6 +117,7 @@
     <Content Include="css\main.css" />
     <Content Include="css\responsive.css" />
     <Content Include="DangKyKH.aspx" />
+    <Content Include="DangNhapKH.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-free-5.15.3-web\attribution.js" />
@@ -1872,6 +1873,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="TrangChu.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -1901,6 +1903,13 @@
     <Compile Include="DangKyKH.aspx.designer.cs">
       <DependentUpon>DangKyKH.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DangNhapKH.aspx.cs">
+      <DependentUpon>DangNhapKH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangNhapKH.aspx.designer.cs">
+      <DependentUpon>DangNhapKH.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1926,6 +1935,13 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1936,6 +1952,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="cms\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

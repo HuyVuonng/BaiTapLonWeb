@@ -1319,4 +1319,16 @@ i.home-product-item_like-icon-fill{
     text-align: center;
     margin-top: 25px;
     color: #737373;
-}  
+}
+
+span#lbThongBao {
+    font-size: 16px;
+    color: red;
+}
+a#lbtBanHang, a#lbtDangXuat{
+    text-decoration:none;
+    color:white;
+}
+a#lbtBanHang:hover, a#lbtDangXuat:hover{
+    opacity:0.7;
+}
