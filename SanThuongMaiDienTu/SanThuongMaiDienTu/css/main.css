@@ -647,6 +647,7 @@
     border-radius: 3px;
     margin-right: 3px;
     cursor: pointer;
+    position:relative;
 }
 
 .header_search-btn:hover{

@@ -40,5 +40,13 @@ namespace SanThuongMaiDienTu
             Session["Mk"] = null;
             Response.Redirect("/TrangChu.aspx");
         }
+
+        protected void lbtTimKiem_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtTimKiem.Text))
+            {
+                Response.Redirect("/TrangChu.aspx?modul=TimKiem&&SanPham="+ txtTimKiem.Text+@"");
+            }
+        }
     }
 }

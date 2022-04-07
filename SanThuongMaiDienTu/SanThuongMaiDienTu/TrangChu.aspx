@@ -133,13 +133,12 @@
 
                     <div class="header_search">
                         <div class="header_search-input-wrap">
-                            <input type="text" class="header_search-input" id="search"
-                                placeholder="Nhập để tìm kiêm sản phẩm">
+        
+                            <asp:TextBox ID="txtTimKiem" runat="server" CssClass="header_search-input"  placeholder="Nhập để tìm kiêm sản phẩm"></asp:TextBox>
                         </div>
 
-                        <button class="header_search-btn">
-                            <i class="header_search-btn-icon fas fa-search"></i>
-                        </button>
+                        <asp:LinkButton ID="lbtTimKiem" runat="server" CssClass="header_search-btn" style="position: relative;" OnClick="lbtTimKiem_Click"><i class="header_search-btn-icon fas fa-search" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);"></i></asp:LinkButton>
+                       
                     </div>
                     <!-- cart -->
                     <div class="header_cart">
@@ -453,11 +452,11 @@
         <div class="modal-body">
             <i class="close-icon fas fa-times" id="close-icon"></i>
             <ul class="nav_list_mobile">
-                <li class="nav_list_item"><a href="" class="nav_list_item_link">Trang chủ</a></li>
-                <li class="nav_list_item"><a href="" class="nav_list_item_link">Quần áo</a></li>
-                <li class="nav_list_item"><a href="" class="nav_list_item_link">Đồ gia dụng</a></li>
-                <li class="nav_list_item"><a href="" class="nav_list_item_link">Đồ điện tử</a></li>
-                <li class="nav_list_item"><a href="" class="nav_list_item_link">Đồ cho trẻ</a></li>
+                 <li class="nav_list_item"><a href="/TrangChu.aspx" class="nav_list_item_link">Trang chủ</a></li>
+                 <li class="nav_list_item"><a href="/TrangChu.aspx?modul=QuanAo" class="nav_list_item_link">Quần áo</a></li>
+                 <li class="nav_list_item"><a href="/TrangChu.aspx?modul=DoGiaDung" class="nav_list_item_link">Đồ gia dụng</a></li>
+                 <li class="nav_list_item"><a href="/TrangChu.aspx?modul=DoDienTu" class="nav_list_item_link">Đồ điện tử</a></li>
+                 <li class="nav_list_item"><a href="/TrangChu.aspx?modul=DoChoTre" class="nav_list_item_link">Đồ cho trẻ</a></li>
             </ul>
             <div class="register-login-mobile">
                 <div class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"

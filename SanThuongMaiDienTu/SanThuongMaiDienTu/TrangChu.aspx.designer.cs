@@ -69,6 +69,24 @@ namespace SanThuongMaiDienTu
         protected global::System.Web.UI.WebControls.LinkButton lbtDangXuat;
 
         /// <summary>
+        /// txtTimKiem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTimKiem;
+
+        /// <summary>
+        /// lbtTimKiem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtTimKiem;
+
+        /// <summary>
         /// TrangChuLoadControl control.
         /// </summary>
         /// <remarks>
