@@ -91,7 +91,7 @@
 
                         <asp:PlaceHolder ID="plDaDN" runat="server" Visible="false">
                             <li class="header__navbar-item header__navbar-item--strong" id="login">
-                            <asp:LinkButton ID="lbtBanHang" runat="server" >Bán hàng</asp:LinkButton></li>
+                            <asp:LinkButton ID="lbtBanHang" runat="server" OnClick="lbtBanHang_Click">Bán hàng</asp:LinkButton></li>
                                  <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"
                             id="register">
                                      <asp:Literal ID="ltrTenKH" runat="server"></asp:Literal></li>

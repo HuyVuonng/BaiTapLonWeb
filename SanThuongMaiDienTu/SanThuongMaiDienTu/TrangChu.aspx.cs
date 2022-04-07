@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -46,6 +49,37 @@ namespace SanThuongMaiDienTu
             if (!string.IsNullOrEmpty(txtTimKiem.Text))
             {
                 Response.Redirect("/TrangChu.aspx?modul=TimKiem&&SanPham="+ txtTimKiem.Text+@"");
+            }
+        }
+        private DataTable GetTkBanHang()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["lienKetSQl"].ConnectionString;
+            using (SqlConnection Cnn = new SqlConnection(connectionString))
+            {
+                using (SqlCommand Cmd = new SqlCommand("laytkBanHang_TK_Mk", Cnn))
+                {
+                    Cmd.CommandType = CommandType.StoredProcedure;
+                    Cmd.Parameters.AddWithValue("@taikhoan", Session["Email"]);
+                    Cmd.Parameters.AddWithValue("@matkhau", Session["Mk"]);
+                    using (SqlDataAdapter Da = new SqlDataAdapter(Cmd))
+                    {
+                        DataTable tbl = new DataTable("tblTaiKhoanBanHang");
+                        Da.Fill(tbl);
+                        return tbl;
+                    }
+                }
+            }
+        }
+        protected void lbtBanHang_Click(object sender, EventArgs e)
+        {
+            DataTable tblTKBanHang = GetTkBanHang();
+            if (tblTKBanHang.Rows.Count > 0)
+            {
+                Response.Redirect("/QuanLyShop.aspx");
+            }
+            else
+            {
+                Response.Redirect("/DangKyBanHang.aspx");
             }
         }
     }
