@@ -1,5 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QuanLyShop.aspx.cs" Inherits="SanThuongMaiDienTu.QuanLyShop" %>
 
+<%@ Register Src="~/cms/TrangQuanLy/TrangQuanLyLoadControl.ascx" TagPrefix="uc1" TagName="TrangQuanLyLoadControl" %>
+
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -132,25 +135,8 @@
                 <div class="grid__row app__content">
                     <div class="grid__colum-10 l-12 c-12">
 
-                        <table class="tblQuanLyHang">
-                            <tbody>
-                                <tr class="hangtbl">
-                                    <td class=" cotTieuDe cotTenhang">Tên mặt hàng</td>
-                                     <td class="cotTieuDe cotLoaihang">Loại hàng</td>
-                                     <td class="cotTieuDe cotAnhBia">Ảnh bìa</td>
-                                     <td class="cotTieuDe cotMota">Mô tả</td>
-                                     <td class="cotTieuDe cotSoLuong">Số lượng còn</td>
-                                     <td class="cotTieuDe cotGiaban">Giá bán</td>
-                                    <td class="cotTieuDe cotTacvu">Tác vụ</td>
-                                </tr>
+                        <uc1:TrangQuanLyLoadControl runat="server" id="TrangQuanLyLoadControl" />
 
-                                <asp:Literal ID="ltrDanhSach" runat="server"></asp:Literal>
-
-                                 
-                            </tbody>
-                        </table>
-
-                        
                     </div>
                 </div>
             </div>

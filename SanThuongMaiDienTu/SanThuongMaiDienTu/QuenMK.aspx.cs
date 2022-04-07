@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace SanThuongMaiDienTu
 {
-    public partial class DangKyKH : System.Web.UI.Page
+    public partial class QuenMK : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -36,33 +36,30 @@ namespace SanThuongMaiDienTu
             }
         }
 
-        protected void lbtDangKy_Click(object sender, EventArgs e)
+        protected void lbtXacNhan_Click(object sender, EventArgs e)
         {
-
             string connectionString = ConfigurationManager.ConnectionStrings["lienKetSQl"].ConnectionString;
             DataTable tblKH_Email = getTKKH_Email();
-            if (tblKH_Email.Rows.Count == 0)
+            if (tblKH_Email.Rows.Count > 0)
             {
                 if (txtMK.Text == txtNhapLaiMK.Text)
                 {
                     using (SqlConnection Cnn = new SqlConnection(connectionString))
                     {
-                        using (SqlCommand Cmd = new SqlCommand("themTKKhachHang", Cnn))
+                        using (SqlCommand Cmd = new SqlCommand("quenMK", Cnn))
                         {
                             Cmd.CommandType = CommandType.StoredProcedure;
-                            Cmd.Parameters.AddWithValue("@hoten", txtHoTen.Text);
+ 
                             Cmd.Parameters.AddWithValue("@taikhoan", txtEmail.Text);
                             Cmd.Parameters.AddWithValue("@matkhau", txtMK.Text);
-                            Cmd.Parameters.AddWithValue("@diachi", txtDiaChi.Text);
-                            Cmd.Parameters.AddWithValue("@sdt", txtSDT.Text);
 
                             Cnn.Open();
                             int n = Cmd.ExecuteNonQuery();
                             Cnn.Close();
                             if (n > 0)
                             {
-                                lbThongBao.Text = "Đăng ký thành công!";
-                                txtHoTen.Text = txtEmail.Text = txtDiaChi.Text = txtSDT.Text = string.Empty;
+                                lbThongBao.Text = "Cập nhật mật khẩu thành công!";
+                                
                             }
                         }//cmd
                     }//Cnn
@@ -74,11 +71,8 @@ namespace SanThuongMaiDienTu
             }
             else
             {
-                lbThongBao.Text = "Tài khoản này đã tồn tại";
-                txtEmail.Text = string.Empty;
+                lbThongBao.Text = "Không tồn tại tài khoản này";
             }
-            
         }
-
     }
 }

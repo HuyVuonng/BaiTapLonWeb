@@ -173,6 +173,22 @@ begin
 	where sTaiKhoan=@taikhoan and sMatKhau=@matkhau
 end
 
+create proc laytkKhachHang_TK(@taikhoan varchar(50))
+as
+begin
+	select * 
+	from tblKhachHang
+	where sTaiKhoan=@taikhoan
+end
+
+create proc quenMK(@taikhoan varchar(50),@matkhau varchar(50))
+as
+begin
+	update tblKhachHang
+	set sMatKhau=@matkhau
+	where sTaiKhoan=@taikhoan
+end
+
 create proc themTKBanHang(@tennoiban nvarchar(50),@taikhoan varchar(50),@matkhau varchar(50),@diachi nvarchar(100),@sdt varchar(15))
 as
 begin
@@ -251,7 +267,7 @@ begin
 	select @manoiban=iMaNoiBan
 	from tblNoiBan
 	where @taikhoan=sTaiKhoan
-	select sTenHang,sTenLoaiHang,AnhBia,sMoTa,iSoLuongCon,fGiaBan
+	select iMaHang, sTenHang,sTenLoaiHang,AnhBia,sMoTa,iSoLuongCon,fGiaBan
 	from vvHang_LoaiHang
 	where iMaNoiBan=@manoiban
 

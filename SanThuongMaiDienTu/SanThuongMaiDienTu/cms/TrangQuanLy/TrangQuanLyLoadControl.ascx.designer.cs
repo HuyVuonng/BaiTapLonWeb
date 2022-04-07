@@ -7,38 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SanThuongMaiDienTu
+namespace SanThuongMaiDienTu.cms.TrangQuanLy
 {
 
 
-    public partial class QuanLyShop
+    public partial class TrangQuanLyLoadControl
     {
 
         /// <summary>
-        /// form1 control.
+        /// plQuanLyLoadControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.PlaceHolder plQuanLyLoadControl;
 
         /// <summary>
-        /// ltrTenShop control.
+        /// plQuanLy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrTenShop;
+        protected global::System.Web.UI.WebControls.PlaceHolder plQuanLy;
 
         /// <summary>
-        /// TrangQuanLyLoadControl control.
+        /// ltrDanhSach control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::SanThuongMaiDienTu.cms.TrangQuanLy.TrangQuanLyLoadControl TrangQuanLyLoadControl;
+        protected global::System.Web.UI.WebControls.Literal ltrDanhSach;
     }
 }
