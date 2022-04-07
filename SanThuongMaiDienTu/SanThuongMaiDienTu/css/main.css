@@ -1333,3 +1333,50 @@ a#lbtBanHang, a#lbtDangXuat{
 a#lbtBanHang:hover, a#lbtDangXuat:hover{
     opacity:0.7;
 }
+
+.tblQuanLyHang{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.hangtbl {
+
+}
+.cotTieuDe{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cotTenhang {
+    width: 205px;
+}
+
+.cotLoaihang {
+    width: 150px;
+}
+.cotAnhBia {
+    width: 180px;
+}
+.cotMota{
+
+}
+.cotSoLuong {
+    width: 66px;
+}
+.cotGiaban{
+    width:130px;
+}
+.cotTacvu {
+    width: 135px;
+}
+.anhSp{
+    width:40px;
+}
+.anhSp:hover{
+    width:100px;
+    cursor:pointer;
+    }
+.SuaBTN {
+        margin: 0 10px;
+    }
