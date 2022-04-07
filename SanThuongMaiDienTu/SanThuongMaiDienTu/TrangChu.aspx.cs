@@ -75,6 +75,7 @@ namespace SanThuongMaiDienTu
             DataTable tblTKBanHang = GetTkBanHang();
             if (tblTKBanHang.Rows.Count > 0)
             {
+                Session["TenShop"] = tblTKBanHang.Rows[0]["sTenNoiBan"];
                 Response.Redirect("/QuanLyShop.aspx");
             }
             else

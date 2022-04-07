@@ -21,9 +21,160 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            Đang Trong Thời Gian Xây dụng
+        <header class="header" id="header">
+        <div class="grid">
+            <nav class="header__navbar ">
+
+
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
+                        <a href="" class="header__navbar-item-link"> <i class="header_napa-icon far fa-bell"></i>
+                            Thông báo</a>
+                        <div class="header_notify">
+                            <header class="header_notify-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header_notify-list">
+                                <li class="header_notify-item">
+                                    <a href="#" class="header_notify-link">
+                                        <img src="https://cf.shopee.vn/file/25fecab4d0c9dbfc7dc590df1e732026_tn" alt=""
+                                            class="header_notify-img">
+                                        <div class="header_notify-info">
+                                            <span class="header_notify-name">Mỹ phẩm Ohui chính hãng </span>
+                                            <span class="header_notify-decription">Mô tả: Mỹ phẩm Ohui chính
+                                                hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header_notify-item">
+                                    <a href="#" class="header_notify-link">
+                                        <img src="https://cf.shopee.vn/file/25fecab4d0c9dbfc7dc590df1e732026_tn" alt=""
+                                            class="header_notify-img">
+                                        <div class="header_notify-info">
+                                            <span class="header_notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header_notify-decription">Mô tả: Mỹ phẩm Ohui chính
+                                                hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header_notify-item">
+                                    <a href="#" class="header_notify-link">
+                                        <img src="https://cf.shopee.vn/file/25fecab4d0c9dbfc7dc590df1e732026_tn" alt=""
+                                            class="header_notify-img">
+                                        <div class="header_notify-info">
+                                            <span class="header_notify-name">Mỹ phẩm Ohui chính hãng</span>
+                                            <span class="header_notify-decription">Mô tả: Mỹ phẩm Ohui chính
+                                                hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <footer class="header_notify-footer">
+                                <a href="" class="header_notify-footer-btn">Xem tất cả</a>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link"><i
+                                class="header_napa-icon far fa-question-circle"></i>Trợ giúp</a>
+                    </li>
+                     <li class="header__navbar-item">
+                         <asp:Literal ID="ltrTenShop" runat="server"></asp:Literal>
+                    </li>
+                    <!-- <li class="header__navbar-item header__navbar-user">
+                        <img src="img/148819050_978251009372346_2252646809833946081_n.jpg" alt="" class="header__navbar-user-img">
+                        <span class="header__navbar-user-name">Huy Vương</span>
+
+                        <ul class="header__navbar-user-menu">
+                            <li class="header__navbar-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li> 
+                            <li class="header__navbar-user-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+                            <li class="header__navbar-user-item">
+                                <a href="">Đơn mua</a>
+                            </li>
+                            <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </nav>
+            <!-- header with search -->
+            <div class="header-with-search">
+                <div class="header_logo">
+                    <a href="#app" class="header_logo-link">
+                        <img src="img/logo3.png" alt="">
+                        <span class="title">Shopping Vui</span>
+                    </a>
+                </div>
+
+                <div class="header_search">
+                    <div class="header_search-input-wrap">
+                        <input type="text" class="header_search-input" id="search"
+                            placeholder="Nhập để tìm kiêm sản phẩm">
+                    </div>
+
+                    <button class="header_search-btn">
+                        <i class="header_search-btn-icon fas fa-search"></i>
+                    </button>
+                </div>
+                <!-- cart -->
+                
+            </div>
         </div>
+    </header>
+
+
+    <header class="header-mobile">
+        <div class="grid wide">
+            <div class="header-mobi-nav">
+                <div class="header-mobi-menu-item" id="header-mobi-menu-item">
+                    <i class="header-mobi-menu-icon fas fa-bars"></i>
+                </div>
+                <div class="header_logo">
+                    <a href="#app" class="header_logo-link">
+                        <img src="img/logo3.png" alt="">
+                        <span class="title">Shopping Vui</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+        <div class="app__container" id="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__colum-10 l-12 c-12">
+
+                        <table class="tblQuanLyHang">
+                            <tbody>
+                                <tr class="hangtbl">
+                                    <td class=" cotTieuDe cotTenhang">Tên mặt hàng</td>
+                                     <td class="cotTieuDe cotLoaihang">Loại hàng</td>
+                                     <td class="cotTieuDe cotAnhBia">Ảnh bìa</td>
+                                     <td class="cotTieuDe cotMota">Mô tả</td>
+                                     <td class="cotTieuDe cotSoLuong">Số lượng còn</td>
+                                     <td class="cotTieuDe cotGiaban">Giá bán</td>
+                                    <td class="cotTieuDe cotTacvu">Tác vụ</td>
+                                </tr>
+
+                                <asp:Literal ID="ltrDanhSach" runat="server"></asp:Literal>
+
+                                 
+                            </tbody>
+                        </table>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
     </form>
 </body>
 </html>

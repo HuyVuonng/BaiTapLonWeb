@@ -237,3 +237,24 @@ begin
 end
 
 exec TimKiem 'SamSung'
+
+create view vvHang_LoaiHang
+as
+	select tblLoaiHang.iMaLH,sTenLoaiHang,iMaHang,sTenHang,sMoTa,AnhBia,fGiaBan,iSoLuongCon,iMaNoiBan
+	from tblLoaiHang,tblHang
+	where tblLoaiHang.iMaLH=tblHang.iMaLH
+
+create proc prLayHangHoaTheoNguoiBan(@taikhoan varchar(50))
+as
+begin
+	declare @manoiban int
+	select @manoiban=iMaNoiBan
+	from tblNoiBan
+	where @taikhoan=sTaiKhoan
+	select sTenHang,sTenLoaiHang,AnhBia,sMoTa,iSoLuongCon,fGiaBan
+	from vvHang_LoaiHang
+	where iMaNoiBan=@manoiban
+
+end
+
+exec prLayHangHoaTheoNguoiBan 'FPTShop@gmail.com'
