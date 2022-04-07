@@ -1,13 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DangKyKH.aspx.cs" Inherits="SanThuongMaiDienTu.DangKyKH" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="QuenMK.aspx.cs" Inherits="SanThuongMaiDienTu.QuenMK" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng ký</title>
+    <title>Quên mật khẩu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/main.css">
@@ -295,30 +295,14 @@
             <div class="auth-form" id="auth-form-register">
                 <div class="auth-form_container" id="auth-form_container-register">
                     <div class="auth-form_header">
-                        <h3 class="auth-form_heading">Đăng ký</h3>
+                        <h3 class="auth-form_heading">Quên mật khẩu</h3>
                         <span class="auth-form_swith-btn" id="auth-form_swith-btn-login"><a
                                 class="auth-form_swith-btn-a" href="DangNhapKH.aspx">Đăng nhập</a></span>
+                         <span class="auth-form_swith-btn" id="auth-form_swith-btn-login"><a
+                                class="auth-form_swith-btn-a" href="DangKyKH.aspx">Đăng ký</a></span>
                     </div>
 
                     <div class="auth-form_form">
-                        <div class="auth-form_group">
-                            <asp:TextBox ID="txtHoTen" runat="server" CssClass="auth-form_input" placeholder="Nhập họ tên của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtHoTen" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
-                        
-                        <div class="auth-form_group">
-                            <asp:TextBox ID="txtSDT" runat="server" CssClass="auth-form_input" placeholder="Nhập số điện thoại của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtSDT" ForeColor="Red"></asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Số điện thoại phải là kiểu số" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtSDT" ValidationExpression="(\d)*"  ForeColor="Red"></asp:RegularExpressionValidator>
-                        </div>
-
-                        
-                        <div class="auth-form_group">
-                            <asp:TextBox ID="txtDiaChi" runat="server" CssClass="auth-form_input" placeholder="Nhập địa chỉ của bạn"></asp:TextBox>
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" SetFocusOnError="true" Display="Dynamic" ControlToValidate="txtDiaChi" ForeColor="Red"></asp:RequiredFieldValidator>
-                        </div>
-
 
 
                         <div class="auth-form_group">
@@ -352,7 +336,7 @@
 
                     <div class="auth-form_control">
                         <button class="btn btn-normal auth-form_control-back">TRỞ LẠI</button>
-                        <asp:Button ID="lbtDangKy" runat="server" CssClass="btn btn-primary" Text="ĐĂNG KÝ" OnClick="lbtDangKy_Click"/>
+                        <asp:Button ID="lbtXacNhan" runat="server" CssClass="btn btn-primary" Text="Xác nhận" OnClick="lbtXacNhan_Click"/>
 
                     </div>
                 </div>
@@ -369,11 +353,6 @@
                 </div>
             </div>
 
-
-
-
-
-           
         </div>
     </form>
 </body>

@@ -112,6 +112,10 @@
     <Content Include="cms\TrangChu\QuanAo\QuanAoLoadControl.ascx" />
     <Content Include="cms\TrangChu\TimKiem\TimKIemLoadControl.ascx" />
     <Content Include="cms\TrangChu\TrangChuLoadControl.ascx" />
+    <Content Include="cms\TrangQuanLy\Sua\SuaLoadControl.ascx" />
+    <Content Include="cms\TrangQuanLy\Them\ThemLoadControl.ascx" />
+    <Content Include="cms\TrangQuanLy\TrangQuanLyLoadControl.ascx" />
+    <Content Include="cms\TrangQuanLy\Xoa\XoaLoadControl.ascx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -1856,6 +1860,7 @@
     <Content Include="img\s22ultra.jpg" />
     <Content Include="img\SSS20.jpg" />
     <Content Include="QuanLyShop.aspx" />
+    <Content Include="QuenMK.aspx" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1944,6 +1949,34 @@
     <Compile Include="cms\TrangChu\TrangChuLoadControl.ascx.designer.cs">
       <DependentUpon>TrangChuLoadControl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="cms\TrangQuanLy\Sua\SuaLoadControl.ascx.cs">
+      <DependentUpon>SuaLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\Sua\SuaLoadControl.ascx.designer.cs">
+      <DependentUpon>SuaLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\Them\ThemLoadControl.ascx.cs">
+      <DependentUpon>ThemLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\Them\ThemLoadControl.ascx.designer.cs">
+      <DependentUpon>ThemLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\TrangQuanLyLoadControl.ascx.cs">
+      <DependentUpon>TrangQuanLyLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\TrangQuanLyLoadControl.ascx.designer.cs">
+      <DependentUpon>TrangQuanLyLoadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\Xoa\XoaLoadControl.ascx.cs">
+      <DependentUpon>XoaLoadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cms\TrangQuanLy\Xoa\XoaLoadControl.ascx.designer.cs">
+      <DependentUpon>XoaLoadControl.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1990,6 +2023,13 @@
     <Compile Include="QuanLyShop.aspx.designer.cs">
       <DependentUpon>QuanLyShop.aspx</DependentUpon>
     </Compile>
+    <Compile Include="QuenMK.aspx.cs">
+      <DependentUpon>QuenMK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuenMK.aspx.designer.cs">
+      <DependentUpon>QuenMK.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2021,7 +2061,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="cms\TrangQuanLy\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

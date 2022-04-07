@@ -316,7 +316,7 @@
 
                     <div class="auth-form_aside">
                         <div class="auth-form_help">
-                            <a href="" class="auth-form_help-link auth-form_help-forgot">Quên mật khẩu</a>
+                            <a href="/QuenMK.aspx" class="auth-form_help-link auth-form_help-forgot">Quên mật khẩu</a>
                             <span class="auth-form_help-sparate"></span>
                             <a href="" class="auth-form_help-link">Cần trợ giúp?</a>
                         </div>

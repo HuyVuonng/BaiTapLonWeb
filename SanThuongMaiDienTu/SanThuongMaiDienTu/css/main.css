@@ -1348,6 +1348,11 @@ a#lbtBanHang:hover, a#lbtDangXuat:hover{
     font-weight: bold;
     font-size: 14px;
 }
+.cotThanhPhan {
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid black;
+}
 .cotTenhang {
     width: 205px;
 }
@@ -1378,5 +1383,22 @@ a#lbtBanHang:hover, a#lbtDangXuat:hover{
     cursor:pointer;
     }
 .SuaBTN {
-        margin: 0 10px;
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+.Xoa {
+    color: black;
+    text-decoration: none;
+}
+.Them {
+    margin-top: 10px;
+    display: block;
+}
+.btntacvu {
+    color: black;
+    text-decoration: none;
+}
+.btntacvu:hover, .Them:hover{
+        opacity:0.7;
     }
