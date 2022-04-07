@@ -81,25 +81,7 @@
                      <li class="header__navbar-item">
                          <asp:Literal ID="ltrTenShop" runat="server"></asp:Literal>
                     </li>
-                    <!-- <li class="header__navbar-item header__navbar-user">
-                        <img src="img/148819050_978251009372346_2252646809833946081_n.jpg" alt="" class="header__navbar-user-img">
-                        <span class="header__navbar-user-name">Huy Vương</span>
-
-                        <ul class="header__navbar-user-menu">
-                            <li class="header__navbar-user-item">
-                                <a href="">Tài khoản của tôi</a>
-                            </li> 
-                            <li class="header__navbar-user-item">
-                                <a href="">Địa chỉ của tôi</a>
-                            </li>
-                            <li class="header__navbar-user-item">
-                                <a href="">Đơn mua</a>
-                            </li>
-                            <li class="header__navbar-user-item header__navbar-user-item--separate">
-                                <a href="">Đăng xuất</a>
-                            </li>
-                        </ul>
-                    </li> -->
+                   
                 </ul>
             </nav>
             <!-- header with search -->
