@@ -125,7 +125,7 @@
                 <!-- header with search -->
                 <div class="header-with-search">
                     <div class="header_logo">
-                        <a href="#app" class="header_logo-link">
+                        <a href="/TrangChu.aspx" class="header_logo-link">
                             <img src="img/logo3.png" alt="">
                             <span class="title">Shopping Vui</span>
                         </a>
