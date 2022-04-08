@@ -212,6 +212,14 @@ begin
 	from tblHang
 end
 
+create proc layMatHangTheoMa(@maMH int)
+as
+begin
+	select *
+	from tblHang
+	where iMaHang=@maMH
+end
+
 create proc layLoaiHangDienTu
 as
 begin
@@ -282,6 +290,22 @@ begin
 	insert into tblHang(sTenHang,fGiaBan,sMoTa,AnhBia,iSoLuongCon,iMaLH,iMaNoiBan)
 	values (@tenhang,@gia,@mota,@anh,@soluong,@maLH,@manoiban)
 end
+
+create proc suaSp(@maMH int,@tenhang nvarchar(100),@gia float,@mota nvarchar(max),@anh varchar(50),@soluong int,@maLH int)
+as
+begin
+	update tblHang
+	set sTenHang=@tenhang,fGiaBan=@gia,sMoTa=@mota,AnhBia=@anh,iSoLuongCon=@soluong,iMaLH=@maLH
+	where iMaHang=@maMH
+end
+
+create proc xoaSp(@maMH int)
+as
+begin
+	delete from tblHang
+	where iMaHang=@maMH
+end
+
 
 create proc layLoaiHang
 as
