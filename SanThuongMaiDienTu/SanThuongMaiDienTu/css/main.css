@@ -1401,4 +1401,30 @@ a#lbtBanHang:hover, a#lbtDangXuat:hover{
 }
 .btntacvu:hover, .Them:hover{
         opacity:0.7;
-    }
+ }
+.tblThemSP {
+    width: 88%;
+    font-size: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tblThemSP_hang{
+   height:40px;
+}
+.tblThemSP_cotTieuDe{
+    width:10%;
+}
+.tblThemSP_CotNhap{
+   
+}
+select#TrangQuanLyLoadControl_ctl00_drlLoaiHang {
+    width: 20%;
+}
+input#TrangQuanLyLoadControl_ctl00_txtTenSp, input#TrangQuanLyLoadControl_ctl00_txtMota{
+    width: 97%;
+}
+.tblThemSP_CotNhap_btn{
+    float:right;
+}

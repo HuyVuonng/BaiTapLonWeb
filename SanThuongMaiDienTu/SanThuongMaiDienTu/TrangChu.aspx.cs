@@ -76,6 +76,9 @@ namespace SanThuongMaiDienTu
             if (tblTKBanHang.Rows.Count > 0)
             {
                 Session["TenShop"] = tblTKBanHang.Rows[0]["sTenNoiBan"];
+                Session["MaShop"] = tblTKBanHang.Rows[0]["iMaNoiBan"];
+                Session["DiaChiShop"] = tblTKBanHang.Rows[0]["sDiaChi"];
+                Session["SDTShop"] = tblTKBanHang.Rows[0]["sDienThoai"];
                 Response.Redirect("/QuanLyShop.aspx");
             }
             else

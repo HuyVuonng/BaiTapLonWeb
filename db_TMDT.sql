@@ -274,3 +274,17 @@ begin
 end
 
 exec prLayHangHoaTheoNguoiBan 'FPTShop@gmail.com'
+
+
+create proc themSp(@tenhang nvarchar(100),@gia float,@mota nvarchar(max),@anh varchar(50),@soluong int,@maLH int,@manoiban int)
+as
+begin
+	insert into tblHang(sTenHang,fGiaBan,sMoTa,AnhBia,iSoLuongCon,iMaLH,iMaNoiBan)
+	values (@tenhang,@gia,@mota,@anh,@soluong,@maLH,@manoiban)
+end
+
+create proc layLoaiHang
+as
+begin
+	select * from tblHang
+end
