@@ -96,7 +96,7 @@
                             id="register">
                                      <asp:Literal ID="ltrTenKH" runat="server"></asp:Literal></li>
                         <li class="header__navbar-item header__navbar-item--strong" id="login">
-                            <asp:LinkButton ID="lbtDangXuat" runat="server" OnClick="lbtDangXuat_Click">Đăng xuất</asp:LinkButton></li>
+                            <asp:LinkButton ID="lbtDangXuat" runat="server" OnClick="lbtDangXuat_Click" CausesValidation="false">Đăng xuất</asp:LinkButton></li>
                         </asp:PlaceHolder>
 
 

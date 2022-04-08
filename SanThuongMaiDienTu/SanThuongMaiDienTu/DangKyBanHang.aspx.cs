@@ -37,8 +37,9 @@ namespace SanThuongMaiDienTu
                     Cnn.Close();
                     if (n > 0)
                     {
-                        lbThongBao.Text = "Đăng ký thành công!";
-                       
+                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Đăng ký thành công!')", true);
+
+
                     }
                 }//cmd
             }//Cnn

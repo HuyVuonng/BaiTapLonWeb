@@ -58,8 +58,8 @@ namespace SanThuongMaiDienTu
                             Cnn.Close();
                             if (n > 0)
                             {
-                                lbThongBao.Text = "Cập nhật mật khẩu thành công!";
-                                
+                                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Cập nhật mật khẩu thành công!')", true);
+                               
                             }
                         }//cmd
                     }//Cnn
