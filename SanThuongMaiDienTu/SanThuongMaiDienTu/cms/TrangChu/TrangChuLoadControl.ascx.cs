@@ -44,9 +44,6 @@ namespace TrangThuongMaiDienTu.cms.TrangChu
                 case "DoGiaDung":
                     plTrangchuLoadControl.Controls.Add(LoadControl("DoGiaDung/DoGiaDungLoadControl.ascx"));
                     break;
-                case "TimKiem":
-                    plTrangchuLoadControl.Controls.Add(LoadControl("TimKiem/TimKiemLoadControl.ascx"));
-                    break;
             }
                     
         }

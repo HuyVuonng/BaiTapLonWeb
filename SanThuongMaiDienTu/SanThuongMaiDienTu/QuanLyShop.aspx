@@ -78,6 +78,9 @@
                         </div>
                     </li>
                     <li class="header__navbar-item">
+                        <a href="/TrangChu.aspx" class="header__navbar-item-link">Về trang chủ</a>
+                    </li>
+                    <li class="header__navbar-item">
                         <a href="" class="header__navbar-item-link"><i
                                 class="header_napa-icon far fa-question-circle"></i>Trợ giúp</a>
                     </li>
