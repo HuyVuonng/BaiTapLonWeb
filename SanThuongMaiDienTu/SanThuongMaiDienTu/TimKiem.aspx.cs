@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 
 namespace SanThuongMaiDienTu
 {
-    public partial class TrangChu : System.Web.UI.Page
+    public partial class TimKiem : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -48,7 +48,6 @@ namespace SanThuongMaiDienTu
         {
             if (!string.IsNullOrEmpty(txtTimKiem.Text))
             {
-                //Response.Redirect("/TrangChu.aspx?modul=TimKiem&&SanPham="+ txtTimKiem.Text+@"");
                 Response.Redirect("/TimKiem.aspx?SanPham=" + txtTimKiem.Text + @"");
             }
         }
