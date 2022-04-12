@@ -147,5 +147,11 @@
 
    
     </form>
+    <script src="Scripts/app.js"></script>
+    <script>
+        function Conform_Delete() {
+            return confirm("Bạn có chắc chắn muốn xóa sản phẩm này khỏi shop không?");
+        }
+    </script>
 </body>
 </html>

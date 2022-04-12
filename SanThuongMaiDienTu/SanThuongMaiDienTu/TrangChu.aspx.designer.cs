@@ -94,5 +94,50 @@ namespace SanThuongMaiDienTu
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::TrangThuongMaiDienTu.cms.TrangChu.TrangChuLoadControl TrangChuLoadControl;
+
+        /// <summary>
+        /// plChuaDNmobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder plChuaDNmobile;
+
+        /// <summary>
+        /// plDaDN_mobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder plDaDN_mobile;
+
+        /// <summary>
+        /// lbtBanHangmobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtBanHangmobile;
+
+        /// <summary>
+        /// ltrTenKH_mobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltrTenKH_mobile;
+
+        /// <summary>
+        /// lbtDangXuatmobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtDangXuatmobile;
     }
 }

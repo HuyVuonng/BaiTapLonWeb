@@ -25,6 +25,9 @@
     .header-mobi-menu-item{
         font-size:46px;
     }
+    .header-mobi-menu-item:hover{
+        opacity:0.7;
+    }
     .modal-mobile{
         position: fixed;
         top: 0;

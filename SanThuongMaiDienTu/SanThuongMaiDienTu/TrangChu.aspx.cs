@@ -21,13 +21,17 @@ namespace SanThuongMaiDienTu
                     //Đã đăng nhập
                     plDaDN.Visible = true;
                     plChuaDN.Visible = false;
+                    plDaDN_mobile.Visible = true;
+                    plChuaDNmobile.Visible = false;
                     if (Session["TenKH"] != null)
-                        ltrTenKH.Text = Session["TenKH"].ToString();
+                        ltrTenKH_mobile.Text=ltrTenKH.Text = Session["TenKH"].ToString();
                 }
                 else
                 {
                     plDaDN.Visible = false;
                     plChuaDN.Visible = true;
+                    plDaDN_mobile.Visible = false;
+                    plChuaDNmobile.Visible = true;
                 }
             }
         }
