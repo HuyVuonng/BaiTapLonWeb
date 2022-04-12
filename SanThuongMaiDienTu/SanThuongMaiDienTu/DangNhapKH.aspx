@@ -271,7 +271,7 @@
                     <i class="header-mobi-menu-icon fas fa-bars"></i>
                 </div>
                 <div class="header_logo">
-                    <a href="#app" class="header_logo-link">
+                    <a href="/TrangChu.aspx" class="header_logo-link">
                         <img src="img/logo3.png" alt="">
                         <span class="title">Shopping Vui</span>
                     </a>
@@ -344,5 +344,6 @@
     </div>
 
     </form>
+    <script src="Scripts/app.js"></script>
 </body>
 </html>

@@ -77,8 +77,8 @@ namespace SanThuongMaiDienTu.cms.TrangQuanLy
                                      <td class='cotThanhPhan cotSoLuong'>" + tblAllDSHangCuaShop.Rows[i]["iSoLuongCon"] + @"</td>
                                      <td class='cotThanhPhan cotGiaban'>" + tblAllDSHangCuaShop.Rows[i]["fGiaBan"] + @"</td>
                                     <td class='cotTieuDe cotTacvu'>
-                                       <a href='/QuanLyShop.aspx?modulQuanLy=Sua&&maSp=" + tblAllDSHangCuaShop.Rows[i]["iMaHang"] + @"' class='btntacvu SuaBTN'>Sửa</a>
-                                       <a href = '/QuanLyShop.aspx?modulQuanLy=Xoa&&maSp=" + tblAllDSHangCuaShop.Rows[i]["iMaHang"] + @"' class='btntacvu Xoa'>Xóa</a>
+                                       <a href='/QuanLyShop.aspx?modulQuanLy=Sua&&maSp=" + tblAllDSHangCuaShop.Rows[i]["iMaHang"] + @"' class='btntacvu SuaBTN' >Sửa</a>
+                                       <a onclick='return Conform_Delete()' href = '/QuanLyShop.aspx?modulQuanLy=Xoa&&maSp=" + tblAllDSHangCuaShop.Rows[i]["iMaHang"] + @"' class='btntacvu Xoa'  >Xóa</a>
                                      </td>
                                 </tr>";
             }

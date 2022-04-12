@@ -124,127 +124,7 @@
                     <div class="header_cart-wrap">
                         <a href=""><i class="header_cart-icon fas fa-shopping-cart"></i>
 
-                            <!-- no-cart:  header_cart-list--no-cart -->
-                            <!-- <div class="header_cart-list">
-                            <img src="./assets/img/no-cart.png" alt="" class="header_cart-no-cart-img">
-                            <span class="header_cart-list--no-cart-msg">Chưa có sản phẩm</span>
-
-
-                            <h4 class="header_cart-heading"> Sản phẩm đã thêm</h4>
-                            <ul class="header_cart-list-item">
-                                cart-item
-                                <li class="header_cart-item">
-                                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573649832-myohui.png"
-                                        class="header_cart-img" alt="">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-header">
-                                            <h5 class="header_cart-item-header-name">Bo kem dac tri vung mat</h5>
-                                            <div class="header_cart-item-price-wrap">
-                                                <span class="header_cart-item-price">2.000.000d</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-decription">Phan loai: Bac</span>
-                                            <span class="header_cart-item-remove">Xoa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_cart-item">
-                                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573649832-myohui.png"
-                                        class="header_cart-img" alt="">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-header">
-                                            <h5 class="header_cart-item-header-name">Bo kem dac tri vung mat</h5>
-                                            <div class="header_cart-item-price-wrap">
-                                                <span class="header_cart-item-price">2.000.000d</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-decription">Phan loai: Bac</span>
-                                            <span class="header_cart-item-remove">Xoa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_cart-item">
-                                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573649832-myohui.png"
-                                        class="header_cart-img" alt="">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-header">
-                                            <h5 class="header_cart-item-header-name">Bo kem dac tri vung mat</h5>
-                                            <div class="header_cart-item-price-wrap">
-                                                <span class="header_cart-item-price">2.000.000d</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-decription">Phan loai: Bac</span>
-                                            <span class="header_cart-item-remove">Xoa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_cart-item">
-                                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573649832-myohui.png"
-                                        class="header_cart-img" alt="">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-header">
-                                            <h5 class="header_cart-item-header-name">Bo kem dac tri vung mat</h5>
-                                            <div class="header_cart-item-price-wrap">
-                                                <span class="header_cart-item-price">2.000.000d</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-decription">Phan loai: Bac</span>
-                                            <span class="header_cart-item-remove">Xoa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_cart-item">
-                                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573649832-myohui.png"
-                                        class="header_cart-img" alt="">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-header">
-                                            <h5 class="header_cart-item-header-name">Bo kem dac tri vung mat</h5>
-                                            <div class="header_cart-item-price-wrap">
-                                                <span class="header_cart-item-price">2.000.000d</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-decription">Phan loai: Bac</span>
-                                            <span class="header_cart-item-remove">Xoa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="header_cart-item">
-                                    <img src="https://img.abaha.vn/photos/resized/320x/73-1573649832-myohui.png"
-                                        class="header_cart-img" alt="">
-                                    <div class="header_cart-item-info">
-                                        <div class="header_cart-item-header">
-                                            <h5 class="header_cart-item-header-name">Bo kem dac tri vung mat</h5>
-                                            <div class="header_cart-item-price-wrap">
-                                                <span class="header_cart-item-price">2.000.000d</span>
-                                                <span class="header_cart-item-multiply">x</span>
-                                                <span class="header_cart-item-quantity">2</span>
-                                            </div>
-                                        </div>
-                                        <div class="header_cart-item-body">
-                                            <span class="header_cart-item-decription">Phan loai: Bac</span>
-                                            <span class="header_cart-item-remove">Xoa</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <a href="#" class="header_cart-view-cart btn btn-primary">Xem gio hang</a>
-                        </div> -->
+                           
                     </div>
 
 
@@ -270,7 +150,7 @@
                     <i class="header-mobi-menu-icon fas fa-bars"></i>
                 </div>
                 <div class="header_logo">
-                    <a href="#app" class="header_logo-link">
+                    <a href="/TrangChu.aspx" class="header_logo-link">
                         <img src="img/logo3.png" alt="">
                         <span class="title">Shopping Vui</span>
                     </a>
@@ -376,5 +256,6 @@
            
         </div>
     </form>
+    <script src="Scripts/app.js"></script>
 </body>
 </html>

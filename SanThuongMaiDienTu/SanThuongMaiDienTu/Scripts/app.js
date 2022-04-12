@@ -164,6 +164,11 @@ function show() {
   modal.classList.add("open");
   authFormLogin.classList.add("show-form");
 }
+
+function Conform_Delete() {
+    return confirm("Bạn có chắc chắn muốn xóa sản phẩm này khỏi shop không?");
+}
+
 function hiden() {
   modal.classList.remove("open");
   authFormLogin.classList.remove("show-form");
@@ -174,3 +179,6 @@ login.addEventListener("click", show);
 authFormContainerLogin.addEventListener("click", function (even) {
   even.stopPropagation();
 });
+
+
+
