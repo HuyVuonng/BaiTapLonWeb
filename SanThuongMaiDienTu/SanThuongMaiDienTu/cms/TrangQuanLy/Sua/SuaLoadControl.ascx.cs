@@ -61,7 +61,7 @@ namespace SanThuongMaiDienTu.cms.TrangQuanLy.Sửa
                 using (SqlCommand Cmd = new SqlCommand("layMatHangTheoMa", Cnn))
                 {
                     Cmd.CommandType = CommandType.StoredProcedure;
-                    Cmd.Parameters.Add("@maMH", maSp);
+                    Cmd.Parameters.Add("@maMH", maSP);
                     using (SqlDataAdapter Da = new SqlDataAdapter(Cmd))
                     {
                         DataTable tbl = new DataTable("tblThongTinSPTheoMa");
@@ -122,7 +122,7 @@ namespace SanThuongMaiDienTu.cms.TrangQuanLy.Sửa
                     Cnn.Close();
                     if (n > 0)
                     {
-                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Sủa thông tin sản phẩm thành công!')", true);
+                        ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Sửa thông tin sản phẩm thành công!')", true);
                         
                     }
                 }//cmd
