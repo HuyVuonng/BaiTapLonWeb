@@ -1326,9 +1326,9 @@ span#lbThongBao {
     font-size: 16px;
     color: red;
 }
-a#lbtBanHang, a#lbtDangXuat{
-    text-decoration:none;
-    color:white;
+a#lbtBanHang, a#lbtDangXuat, a#lbtDangXuatmobile, a#lbtBanHangmobile {
+    text-decoration: none;
+    color: white;
 }
 a#lbtBanHang:hover, a#lbtDangXuat:hover{
     opacity:0.7;

@@ -43,7 +43,7 @@ namespace TrangThuongMaiDienTu.cms.TrangChu.DoDienTu
             DataTable tblAllMatHangDienTu = getAllMatHangDienTu();
             for (int i = 0; i < tblAllMatHangDienTu.Rows.Count; i++)
             {
-
+                string tien = Convert.ToDouble(tblAllMatHangDienTu.Rows[i]["fGiaBan"]).ToString("N0");//Them dau phan cach hang nghin
                 ltrListMatHang.Text += @"<div class='grid__colum-2-4 l-2-4 m-4 c-12'>
                                     <a class='home-product-item' href='#'>
                                         <div class='home-product-item__img'
@@ -51,7 +51,7 @@ namespace TrangThuongMaiDienTu.cms.TrangChu.DoDienTu
                                         </div>
                                         <h4 class='home-product-item__name'>" + tblAllMatHangDienTu.Rows[i]["sTenHang"] + @"</h4>
                                         <div class='home-product-item-price'>
-                                            <span class='home-product-item-price-new'>" + tblAllMatHangDienTu.Rows[i]["fGiaBan"] + "đ" + @"</span>
+                                            <span class='home-product-item-price-new'>" + tien + "đ" + @"</span>
                                         </div>
                                         <div class='home-product-item-action'>
                                             <span class='home-product-item_like home-product-item_like--liked'>
